@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="auth-page">
+  <a class="brand auth-brand" href="/">folio<span>.</span></a>
+  <main class="auth-card">
+    <p class="eyebrow">WELCOME BACK</p>
+    <h1>Log in to your space</h1>
+    <p class="muted">Your portfolio is right where you left it.</p>
+    <form id="loginForm">
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="Enter your password" required>
+      <button class="button full" type="submit">Login</button>
+      <p id="loginMessage" class="message"></p>
+    </form>
+    <p class="auth-switch">New here? <a href="/register.html">Create an account</a></p>
+  </main>
+  <footer>© 2026 Student Portfolio Management System</footer>
+</body>
+</html>

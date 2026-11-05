@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="dashboard-page">
+  <header class="topbar">
+    <a class="brand" href="/dashboard.html">folio<span>.</span></a>
+    <nav><span id="navName" class="nav-user"></span><button id="logoutButton" class="nav-button">Logout</button></nav>
+  </header>
+
+  <main class="dashboard-wrap">
+    <section class="welcome-row">
+      <div><p class="eyebrow">YOUR PERSONAL SPACE</p><h1>Hello, <span id="welcomeName">Student</span> ✦</h1><p class="muted">Your journey, skills and work — all in one place.</p></div>
+      <div class="welcome-mark">✳</div>
+    </section>
+
+    <section class="panel profile-panel">
+      <div class="section-heading"><div><p class="eyebrow">ABOUT YOU</p><h2>My profile</h2></div><span class="pill">PROFILE</span></div>
+      <form id="profileForm" class="profile-form">
+        <div class="field"><label for="profileName">Full name</label><input id="profileName" name="name" required></div>
+        <div class="field"><label for="course">Course / Department</label><input id="course" name="course" placeholder="e.g. BSc Computer Science and Mathematics"></div>
+        <div class="field field-wide"><label for="about">About me</label><textarea id="about" name="about" rows="3" placeholder="Write a short introduction about yourself..."></textarea></div>
+        <div class="field"><label>Email address</label><input id="profileEmail" disabled></div>
+        <div class="field field-button"><button class="button" type="submit">Save profile</button></div>
+      </form>
+      <p id="profileMessage" class="message"></p>
+    </section>
+
+    <section class="content-grid">
+      <div class="panel">
+        <div class="section-heading"><div><p class="eyebrow">WHAT I CAN DO</p><h2>My skills</h2></div><span class="count" id="skillsCount">0</span></div>
+        <form class="item-form" data-type="skills"><input name="title" placeholder="Skill name (e.g. HTML)" required><input name="description" placeholder="Short description (optional)"><button class="button small" type="submit">Add</button></form>
+        <div id="skillsList" class="item-list"></div>
+      </div>
+      <div class="panel">
+        <div class="section-heading"><div><p class="eyebrow">MILESTONES</p><h2>Achievements</h2></div><span class="count" id="achievementsCount">0</span></div>
+        <form class="item-form" data-type="achievements"><input name="title" placeholder="Achievement title" required><input name="description" placeholder="Details (optional)"><button class="button small" type="submit">Add</button></form>
+        <div id="achievementsList" class="item-list"></div>
+      </div>
+      <div class="panel panel-wide">
+        <div class="section-heading"><div><p class="eyebrow">THINGS I'VE MADE</p><h2>My projects</h2></div><span class="count" id="projectsCount">0</span></div>
+        <form class="item-form project-form" data-type="projects"><input name="title" placeholder="Project name" required><input name="description" placeholder="What is this project about?"><button class="button small" type="submit">Add project</button></form>
+        <div id="projectsList" class="item-list project-list"></div>
+      </div>
+    </section>
+  </main>
+  <footer>Keep learning. Keep creating. Keep growing. ✦</footer>
+</body>
+</html>

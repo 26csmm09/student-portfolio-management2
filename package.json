@@ -1,0 +1,12 @@
+{
+  "name": "student-portfolio-management-system",
+  "version": "1.0.0",
+  "description": "A beginner-friendly student portfolio website using HTML, CSS, JavaScript, Node.js and MongoDB without Express.js.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.12.0"
+  }
+}
